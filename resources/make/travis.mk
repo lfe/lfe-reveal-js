@@ -1,0 +1,1 @@
+check-travis: $(LFETOOL) check
