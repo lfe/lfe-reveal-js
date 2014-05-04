@@ -2,7 +2,7 @@
   (export all))
 
 (defun my-adder (x y)
-  (+ x (+ y 1)))
+  (+ x y))
 
 (defun out (arg-data)
   "This function is executed by YAWS. It is the YAWS entry point for our app."
