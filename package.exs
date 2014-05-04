@@ -1,7 +1,7 @@
 Expm.Package.new(
   name: "lfe-reveal-js",
-  description: "lfe-reveal-js DESCRIPTION",
+  description: "An LFE/Exemplar Wrapper for Reveal.js",
   version: "0.0.1",
-  keywords: ["LFE", "Lisp", "Library", "API"],
-  maintainers: [[name: "YOUR NAME", email: "YOUR@EMAIL.com"]],
-  repositories: [[github: "YOUR_GITHUB_NAME/lfe-reveal-js]])
+  keywords: ["LFE", "Lisp", "Library", "HTML", "JavaScript", "JS"],
+  maintainers: [[name: "Duncan McGreggor", email: "oubiwann@cogitat.io"]],
+  repositories: [[github: "lfe/lfe-reveal-js]])
