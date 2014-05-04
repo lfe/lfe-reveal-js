@@ -85,8 +85,6 @@ check-all: get-deps compile-no-deps
 
 check: check-unit-with-deps
 
-check-travis: $(LFETOOL) check
-
 push-all:
 	@echo "Pusing code to github ..."
 	git push --all
