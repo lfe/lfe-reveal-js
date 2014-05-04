@@ -25,21 +25,19 @@ directory of this project when you run ``make deps``:
 
 Just add it to your ``rebar.config`` deps:
 
-.. code:: erlang
-
-    {deps, [
-        ...
-        {lfe-reveal-js, ".*", {git, "git@github.com:YOURNAME/lfe-reveal-js.git", "master"}}
-      ]}.
-
+```erlang
+{deps, [
+    ...
+    {lfe-reveal-js, ".*", {git, "git@github.com:YOURNAME/lfe-reveal-js.git", "master"}}
+  ]}.
+```
 
 And then do the usual:
 
-.. code:: bash
-
-    $ rebar get-deps
-    $ rebar compile
-
+```bash
+$ rebar get-deps
+$ rebar compile
+```
 
 ## Usage
 
