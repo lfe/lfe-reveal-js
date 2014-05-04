@@ -28,7 +28,7 @@ Just add it to your ``rebar.config`` deps:
 ```erlang
 {deps, [
     ...
-    {lfe-reveal-js, ".*", {git, "git@github.com:YOURNAME/lfe-reveal-js.git", "master"}}
+    {lfe-reveal-js, ".*", {git, "git@github.com:lfe/lfe-reveal-js.git", "master"}}
   ]}.
 ```
 
