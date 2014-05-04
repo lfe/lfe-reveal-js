@@ -1,10 +1,8 @@
-include common.mk
-
 ETC_DIR = ./etc
 YAWS_DIR = $(DEPS)/yaws
 YAWS = $(YAWS_DIR)/bin/yaws
 YAWS_CONF = $(ETC_DIR)/yaws.conf
-YAWS_SERVER_ID = changeme
+YAWS_SERVER_ID = lferevealjs
 
 dev: compile-no-deps
 	@ERL_LIBS=$(ERL_LIBS) $(YAWS) -i --conf $(YAWS_CONF) --id $(YAWS_SERVER_ID)

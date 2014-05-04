@@ -1,74 +1,69 @@
 PROJECT = lfe-reveal-js
-LIB = lfe-reveal-js
+LIB = $(PROJECT)
 DEPS = ./deps
 BIN_DIR = ./bin
 EXPM = $(BIN_DIR)/expm
-LFE_DIR = $(DEPS)/lfe
-LFE_EBIN = $(LFE_DIR)/ebin
-LFE = $(LFE_DIR)/bin/lfe
-LFEC = $(LFE_DIR)/bin/lfec
-LFE_UTILS_DIR = $(DEPS)/lfe-utils
-LFEUNIT_DIR = $(DEPS)/lfeunit
-LFETOOL=/usr/local/bin/lfetool
+LFETOOL=$(BIN_DIR)/lfetool
 SOURCE_DIR = ./src
 OUT_DIR = ./ebin
 TEST_DIR = ./test
 TEST_OUT_DIR = ./.eunit
-FINISH = -run init stop -noshell
-# Note that ERL_LIBS is for running this project in development and that
-# ERL_LIB is for installation.
-ERL_LIBS = $(shell find $(DEPS) -maxdepth 1 -exec echo -n '{}:' \;|sed 's/:$$/:./'):$(TEST_OUT_DIR)
-SCRIPT_PATH=.:./bin:$(PATH)
+SCRIPT_PATH=.:./bin:./deps/lfe/bin:$(PATH):/usr/local/bin
 
 $(BIN_DIR):
 	mkdir -p $(BIN_DIR)
 
 $(LFETOOL): $(BIN_DIR)
-	curl -o ./lfetool https://raw.github.com/lfe/lfetool/master/lfetool
-	chmod 755 ./lfetool
-	mv ./lfetool ./bin/
+	@[ -f $(LFETOOL) ] || \
+	curl -L -o ./lfetool https://raw.github.com/lfe/lfetool/master/lfetool && \
+	chmod 755 ./lfetool && \
+	mv ./lfetool $(BIN_DIR)
 
 get-version:
 	@PATH=$(SCRIPT_PATH) lfetool info version
 
 $(EXPM): $(BIN_DIR)
-	@PATH=$(SCRIPT_PATH) lfetool install expm
+	@[ -f $(EXPM) ] || \
+	PATH=$(SCRIPT_PATH) lfetool install expm $(BIN_DIR)
 
 get-deps:
 	@echo "Getting dependencies ..."
-	@rebar get-deps
+	@which rebar.cmd >/dev/null 2>&1 && rebar.cmd get-deps || rebar get-deps
 	@PATH=$(SCRIPT_PATH) lfetool update deps
 
 clean-ebin:
 	@echo "Cleaning ebin dir ..."
-	@rm -f $(OUT_DIR)/*.beam
+	@rm -rf $(OUT_DIR)/*.beam
+
+clean-rebar:
+	@rm -rf ./.rebar
 
 clean-eunit:
-	@PATH=$(SCRIPT_PATH) lfetool tests clean
+	@-PATH=$(SCRIPT_PATH) lfetool tests clean
 
 compile: get-deps clean-ebin
 	@echo "Compiling project code and dependencies ..."
-	@rebar compile
+	@which rebar.cmd >/dev/null 2>&1 && rebar.cmd compile || rebar compile
 
 compile-no-deps: clean-ebin
 	@echo "Compiling only project code ..."
-	@rebar compile skip_deps=true
+	@which rebar.cmd >/dev/null 2>&1 && rebar.cmd compile skip_deps=true || rebar compile skip_deps=true
 
 compile-tests:
 	@PATH=$(SCRIPT_PATH) lfetool tests build
 
 shell: compile
-	@clear
+	@which clear >/dev/null 2>&1 && clear || printf "\033c"
 	@echo "Starting shell ..."
 	@PATH=$(SCRIPT_PATH) lfetool repl
 
 shell-no-deps: compile-no-deps
-	@clear
+	@which clear >/dev/null 2>&1 && clear || printf "\033c"
 	@echo "Starting shell ..."
 	@PATH=$(SCRIPT_PATH) lfetool repl
 
-clean: clean-ebin clean-eunit
-	@rebar clean
+clean: clean-ebin clean-eunit clean-rebar
+	@which rebar.cmd >/dev/null 2>&1 && rebar.cmd clean || rebar clean
 
 check-unit-only:
 	@PATH=$(SCRIPT_PATH) lfetool tests unit
@@ -100,11 +95,11 @@ push-all:
 	git push upstream --tags
 
 install: compile
-	@echo "Installing lfe-reveal-js ..."
+	@echo "Installing roz ..."
 	@PATH=$(SCRIPT_PATH) lfetool install lfe
 
 upload: $(EXPM) get-version
-	@echo "Preparing to upload lfe-reveal-js ..."
+	@echo "Preparing to upload roz ..."
 	@echo
 	@echo "Package file:"
 	@echo
