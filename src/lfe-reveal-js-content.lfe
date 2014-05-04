@@ -4,7 +4,7 @@
 (include-lib "deps/exemplar/include/html-macros.lfe")
 
 (defun build-index ()
-  (!doctype html)
+  (!doctype 'html)
     (html '(lang "en")
       (list
         (head
