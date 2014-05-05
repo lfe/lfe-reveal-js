@@ -7,7 +7,7 @@
 **An LFE/Exemplar Wrapper for Reveal.js**
 
 You always wanted to build your presetnations in LFE (Lisp Flavored Erlang),
-right? With HTML as S-expressions?
+right? With HTML as S-Expressions?
 
 We thought so.
 
