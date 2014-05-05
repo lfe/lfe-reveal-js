@@ -1,0 +1,17 @@
+%% -*- erlang -*-
+{application, 'reveal-js',
+ [
+  {description, "An LFE/Exemplar Wrapper for Reveal.js"},
+  {vsn, "0.0.1"},
+  {modules,
+   [
+    'reveal-js'
+   ]},
+  {applications,
+   [
+    kernel,
+    stdlib
+   ]},
+  {env, []}
+ ]
+}.

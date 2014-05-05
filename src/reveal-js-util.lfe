@@ -1,4 +1,4 @@
-(defmodule lfe-reveal-js-util
+(defmodule reveal-js-util
   (export all))
 
 (include-lib "deps/yaws/include/yaws_api.hrl")

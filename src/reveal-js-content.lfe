@@ -1,4 +1,4 @@
-(defmodule lfe-reveal-js-content
+(defmodule reveal-js-content
   (export all))
 
 (include-lib "deps/exemplar/include/html-macros.lfe")
@@ -17,7 +17,7 @@
       (h1 '"Reveal.js")
       (h3 '"HTML Presentation Made Easy")
       (p
-        (small '"lfe-reveal-js: The Exemplar Presentation Framework")))))
+        (small '"reveal-js: The Exemplar Presentation Framework")))))
 
 (defun build-chapter-1 (arg-data)
   (section
@@ -42,7 +42,7 @@
   (head
     (list
       (meta '(charset "utf-8"))
-      (title '"lfe-reveal-js - The Exemplar Presentation Framework")
+      (title '"reveal-js - The Exemplar Presentation Framework")
       (meta '(name "description"
               content "A framework for easily creating beautiful presentations using Exemplar"))
       (meta '(name "authors"
