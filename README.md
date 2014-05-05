@@ -50,7 +50,8 @@ you will need to do the follwoing:
 $ make dev
 ```
 
-Then visit [localhost:5099](http://localhost:5099) to check out the demo.
+Then visit [localhost:5099](http://localhost:5099) to run through the demo
+slide deck.
 
 
 ## Building Your Own
