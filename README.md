@@ -3,7 +3,12 @@
 
 ## Introduction
 
-Add content to me here!
+**An LFE/Exemplar Wrapper for Reveal.js**
+
+You always wanted to build your presetnations in LFE (Lisp Flavored Erlang),
+right? HTML as S-expressions?
+
+Now's your chance!
 
 
 ## Dependencies
@@ -41,5 +46,14 @@ $ rebar compile
 
 ## Usage
 
-Add content to me here!
+```bash
+$ make compile
+$ make dev
+```
 
+Then visit [localhost:5099](http://localhost:5099).
+
+## Building Your Own
+
+If you'd like to build your own slide deck with ``lfe-reveal-js``, just clone
+this repo, and start adding your slides in `src/reveal-js-content.lfe``. That's all there is to it!
