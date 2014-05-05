@@ -5,10 +5,10 @@
 
 (defun introduction (arg-data)
   (cover
-    (h1 '"Reveal.js")
-    (h3 '"HTML Presentation Made Easy")
-    (p
-      (small '"lfe-reveal-js: The Exemplar Presentation Framework"))))
+    (h1 '"LFE-Reveal-JS")
+    (h3 (list '"HTML Presentation Made" (em '" Ludicrously ") '"Robust"))
+    (p (small '"(and absurdly hip)"))
+    (p '"The Exemplar Presentation Framework")))
 
 (defun chapter-1 (arg-data)
   (chapter
@@ -30,7 +30,7 @@
     (slide
       (h1 '"In a nutshell...")
       (p '(class "fragment")
-         '"We've got your world-class distributed-systems language, Erlang,")
+         '"We've got the world-class distributed-systems programming language -- Erlang")
       (p '(class "fragment")
          '"Running a webserver known for spanking Apache into the Stone Age,")
       (p '(class "fragment")
@@ -49,16 +49,11 @@
       (h1 '"80,000"))
     (slide
       (p '"(That's how many viewers can load this presentation")
-      (p '(class "fragment")
-         '"concurrently")
-      (p '(class "fragment")
-         '"without YAWS breaking a sweat.)"))
+      (p '(class "fragment") '"concurrently")
+      (p '(class "fragment") '"without YAWS breaking a sweat.)"))
     (slide
-      (p
-        (list
-          (span '"We're not going to let ")
-          (em '"anyone ")
-          (span '"DDOS your deck on the big day."))))))
+      (p (list '"We're not going to let" (em '" anyone ")
+         '"DDOS your deck on the big day.")))))
 
 (defun chapter-2 (arg-data)
   (chapter

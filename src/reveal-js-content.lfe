@@ -25,7 +25,7 @@
   (head
     (list
       (meta '(charset "utf-8"))
-      (title '"reveal-js - The Exemplar Presentation Framework")
+      (title '"lfe-reveal-js - The Exemplar Presentation Framework")
       (meta '(name "description"
               content "A framework for easily creating beautiful presentations using Exemplar"))
       (meta '(name "authors"
