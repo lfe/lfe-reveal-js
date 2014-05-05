@@ -1,6 +1,8 @@
 (defmodule slides
   (export all))
 
+(include-lib "deps/exemplar/include/html-macros.lfe")
+
 (defun cover (arg-data)
   (section
     (list
