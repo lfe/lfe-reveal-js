@@ -92,3 +92,29 @@ macros:
 
 Take a look at the code for the demo slide deck to see example usage of
 these: ``src/demo.lfe``.
+
+
+### Generated a Staic File
+
+By default, YAWS serves the slide deck dynamically -- regenerated on page
+load. Here's how you create a static HTML file from the REPL:
+
+```cl
+[under development]
+```
+
+And here's a ``make`` target so you can do this from the command line:
+
+```bash
+[under development]
+```
+
+
+### Generating a Release
+
+If you would like to make a release (zip/tarball) for easy uploading/sharing,
+simply run this make target:
+
+```bash
+[under development]
+```
