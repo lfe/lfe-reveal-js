@@ -56,7 +56,7 @@ slide deck.
 
 ## Building Your Own
 
-If you'd like to build your own slide deck with ``lfe-reveal-js``, just clone
+If you'd like to build your own slide deck with **lfe-reveal-js**, just clone
 this repo, and start adding your slides in ``src/reveal-js-content.lfe`` and
 ``src/demo.lfe``.
 
@@ -77,7 +77,8 @@ And then visit [localhost:5099](http://localhost:5099).
 As mentioned, lfe-reveal-js uses [Exemplar](https://github.com/lfe/exemplar),
 which defines macros for all of HTML5.
 
-In addition to these, lfe-reveal-js defines a handful of convenience macros:
+In addition to these, **lfe-reveal-js** defines a handful of convenience
+macros:
 
 * ``(deck ...)`` - For creating the slide deck itself.
 * ``(cover ...)`` - For creating a cover page.
