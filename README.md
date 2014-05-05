@@ -134,4 +134,4 @@ using the <a href="http://hoplon.io/">Hoplon</a> library. That project was:
 * <a href="https://github.com/oubiwann/hoplon-reveal-js">hoplon-reveal-js</a>
 
 A special thanks to the Hoplon crew for all their hard work and their help
-in getting me started on Hoplong and making contributions to that community.
+in getting me started on Hoplon and making contributions to that community.
