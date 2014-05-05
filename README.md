@@ -113,7 +113,7 @@ And here's a ``make`` target so you can do this from the command line:
 ### Generating a Release
 
 If you would like to make a release (zip/tarball) for easy uploading/sharing,
-simply run this make target:
+simply run this ``make`` target:
 
 ```bash
 [under development]
