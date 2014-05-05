@@ -1,4 +1,4 @@
-(defmodule slides
+(defmodule demo
   (export all))
 
 (include-lib "include/macros.lfe")

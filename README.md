@@ -67,7 +67,7 @@ Then visit [localhost:5099](http://localhost:5099) to check out the demo.
 
 If you'd like to build your own slide deck with ``lfe-reveal-js``, just clone
 this repo, and start adding your slides in ``src/reveal-js-content.lfe`` and
-``src/slides.lfe``.
+``src/demo.lfe``.
 
 That's all there is to it!
 
@@ -84,4 +84,4 @@ In addition to these, lfe-reveal-js defines a handful of convenience macros:
 * ``(slide ...)`` - For making a new slide in a chapter.
 
 Take a look at the code for the demo slide deck to see example usage of
-these: ``src/slides.lfe``.
+these: ``src/demo.lfe``.

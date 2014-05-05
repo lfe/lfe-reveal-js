@@ -5,10 +5,10 @@
 
 (defun build-slide-deck (arg-data)
   (deck
-    (slides:introduction arg-data)
-    (slides:chapter-1 arg-data)
-    (slides:chapter-2 arg-data)
-    (slides:chapter-3 arg-data)))
+    (demo:introduction arg-data)
+    (demo:chapter-1 arg-data)
+    (demo:chapter-2 arg-data)
+    (demo:chapter-3 arg-data)))
 
 (defun build-index (arg-data)
   (list
