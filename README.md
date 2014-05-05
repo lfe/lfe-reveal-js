@@ -71,7 +71,7 @@ this repo, and start adding your slides in ``src/reveal-js-content.lfe`` and
 
 That's all there is to it!
 
-## Dev Notes
+### Dev Notes
 
 As mentioned, lfe-reveal-js uses [Exemplar](https://github.com/lfe/exemplar),
 which defines macros for all of HTML5.
