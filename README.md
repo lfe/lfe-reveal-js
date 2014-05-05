@@ -2,6 +2,7 @@
 
 <img src="resources/images/logo-reveal-lfe-tiny.png"/>
 
+
 ## Introduction
 
 **An LFE/Exemplar Wrapper for Reveal.js**
@@ -33,35 +34,24 @@ They are as follows:
 * [Exemplar](https://github.com/lfe/exemplar) - HTML as S-Expressions
 * [Reveal.js](https://github.com/hakimel/reveal.js)
 
-
-## Installation
-
-Not sure why you'd want to include this as part of another project, but just
-in case you do, here's how it's done: add it to your ``rebar.config`` deps:
-
-```erlang
-{deps, [
-    ...
-    {lfe-reveal-js, ".*", {git, "git@github.com:lfe/lfe-reveal-js.git",
-      "master"}}
-  ]}.
-```
-
-And then do the usual:
-
-```bash
-$ rebar get-deps
-$ rebar compile
-```
-
-## Usage
+To download the dependencies and compile them, do this in your cloned dir:
 
 ```bash
 $ make compile
+```
+
+
+## Demo!
+
+Assuming you'v already gotten the deps and compiled them, to view the demo
+you will need to do the follwoing:
+
+```bash
 $ make dev
 ```
 
 Then visit [localhost:5099](http://localhost:5099) to check out the demo.
+
 
 ## Building Your Own
 
@@ -69,7 +59,17 @@ If you'd like to build your own slide deck with ``lfe-reveal-js``, just clone
 this repo, and start adding your slides in ``src/reveal-js-content.lfe`` and
 ``src/demo.lfe``.
 
-That's all there is to it!
+
+### Running the Deck
+
+Just like the demo, all you need to do to check out your new masterpiece is:
+
+```bash
+$ make dev
+```
+
+And then visit [localhost:5099](http://localhost:5099).
+
 
 ### Dev Notes
 
