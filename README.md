@@ -39,9 +39,11 @@ the project repo:
 
 * [Reveal.js](https://github.com/hakimel/reveal.js)
 
-To download the dependencies and compile them, do this in your cloned dir:
+To download the dependencies and compile them, do this:
 
 ```bash
+$ git clone https://github.com/lfe/lfe-reveal-js.git
+$ cd lfe-reveal-js
 $ make compile
 ```
 
