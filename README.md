@@ -29,6 +29,7 @@ They are as follows:
 
 * [LFE](https://github.com/rvirding/lfe) (Lisp Flavored Erlang; needed only
   to compile)
+* [YAWS](http://yaws.hyber.org/)
 * [lfeunit](https://github.com/lfe/lfeunit) (needed only to run the unit
   tests)
 * [Exemplar](https://github.com/lfe/exemplar) - HTML as S-Expressions
@@ -52,6 +53,10 @@ $ make dev
 
 Then visit [localhost:5099](http://localhost:5099) to run through the demo
 slide deck.
+
+For those too lazy to clone and run this, we offer you the chance to bail
+with a youtube video of the demo (running on YAWS, of course):
+<a href="https://www.youtube.com/watch?v=jpMXn30iL-M">https://www.youtube.com/watch?v=jpMXn30iL-M</a>.
 
 
 ## Building Your Own
