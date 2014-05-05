@@ -1,16 +1,14 @@
 (defmodule reveal-js-content
   (export all))
 
-(include-lib "deps/exemplar/include/html-macros.lfe")
+(include-lib "include/macros.lfe")
 
 (defun build-slide-deck (arg-data)
-  (div '(class "reveal")
-    (div '(class "slides")
-      (list
-        (slides:cover arg-data)
-        (slides:chapter-1 arg-data)
-        (slides:chapter-2 arg-data)
-        (slides:chapter-3 arg-data)))))
+  (deck
+    (slides:introduction arg-data)
+    (slides:chapter-1 arg-data)
+    (slides:chapter-2 arg-data)
+    (slides:chapter-3 arg-data)))
 
 (defun build-index (arg-data)
   (list
