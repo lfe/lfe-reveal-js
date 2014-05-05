@@ -56,4 +56,4 @@ Then visit [localhost:5099](http://localhost:5099).
 ## Building Your Own
 
 If you'd like to build your own slide deck with ``lfe-reveal-js``, just clone
-this repo, and start adding your slides in `src/reveal-js-content.lfe``. That's all there is to it!
+this repo, and start adding your slides in ``src/reveal-js-content.lfe``. That's all there is to it!
