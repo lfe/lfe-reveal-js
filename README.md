@@ -100,7 +100,7 @@ Take a look at the code for the demo slide deck to see example usage of
 these: ``src/demo.lfe``.
 
 
-### Generated a Staic File
+### Generating a Staic File
 
 By default, YAWS serves the slide deck dynamically -- regenerated on page
 load. Here's how you create a static HTML file from the REPL:
