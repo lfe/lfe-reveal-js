@@ -124,3 +124,14 @@ simply run this ``make`` target:
 ```bash
 [under development]
 ```
+
+
+## Background
+
+This project is inspired by another that I wrote in Clojure/ClojureScript
+using the <a href="http://hoplon.io/">Hoplon</a> library. That project was:
+
+* <a href="https://github.com/oubiwann/hoplon-reveal-js">hoplon-reveal-js</a>
+
+A special thanks to the Hoplon crew for all their hard work and their help
+in getting me started on Hoplong and making contributions to that community.
