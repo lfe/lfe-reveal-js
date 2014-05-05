@@ -23,6 +23,7 @@
       (h3 '"Did you just say 'Lisp'?"))
     (slide
       (h1 '"YES")
+      (h2 '(class "fragment") '"Distributed Lisp, that is.")
       (h3 '(class "fragment") '"It's the language you always wanted,")
       (p '(class "fragment") '"But were too frightened by the power")
       (p '(class "fragment") (small '"To ask for it.")))
@@ -31,9 +32,11 @@
       (p '(class "fragment")
          '"We've got your world-class distributed-systems language, Erlang,")
       (p '(class "fragment")
-         '"Running an implementation of Lisp,")
+         '"Running a webserver known for spanking Apache into the Stone Age,")
       (p '(class "fragment")
-         '"Building libraries to generate HTML with S-Expressions,")
+         '"Whose application entry point is a function written in Lisp,")
+      (p '(class "fragment")
+         '"Which built libraries to generate HTML via S-Expressions,")
       (p '(class "fragment")
          '"To be manipulated into high-attractiveness by Reveal.js,")
       (p '(class "fragment")
@@ -41,7 +44,21 @@
     (slide
       (h1 '"For this guy")
       (h1 '"☟")
-      (img '(src "/images/pointy.jpg")))))
+      (img '(src "/images/pointy.jpg")))
+    (slide
+      (h1 '"80,000"))
+    (slide
+      (p '"(That's how many viewers can load this presentation")
+      (p '(class "fragment")
+         '"concurrently")
+      (p '(class "fragment")
+         '"without YAWS breaking a sweat.)"))
+    (slide
+      (p
+        (list
+          (span '"We're not going to let ")
+          (em '"anyone ")
+          (span '"DDOS your deck on the big day."))))))
 
 (defun chapter-2 (arg-data)
   (chapter
@@ -49,6 +66,10 @@
       (h1 '"Powered By")
       (h3 '"Erlang")
       (img '(src "/images/Erlang_logo.png")))
+    (slide
+      (h1 '"Powered By")
+      (h3 '"YAWS")
+      (img '(src "/images/yaws_logo.png")))
     (slide
       (h1 '"Powered By")
       (h3 '"Lisp Flavored Erlang")
