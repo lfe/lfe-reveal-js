@@ -1,5 +1,6 @@
 # lfe-reveal-js [![Build Status](https://travis-ci.org/lfe/lfe-reveal-js.png?branch=master)](https://travis-ci.org/lfe/lfe-reveal-js)
 
+<img src="resources/images/logo-reveal-lfe-tiny.png"/>
 
 ## Introduction
 
