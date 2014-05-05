@@ -5,4 +5,4 @@ Expm.Package.new(
   keywords: ["LFE", "Lisp", "Library", "YAWS", "HTTP", "HTML",
              "JavaScript", "JS"],
   maintainers: [[name: "Duncan McGreggor", email: "oubiwann@cogitat.io"]],
-  repositories: [[github: "lfe/lfe-reveal-js]])
+  repositories: [[github: "lfe/lfe-reveal-js"]])
