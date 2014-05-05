@@ -1,4 +1,4 @@
-(defmodule reveal-js
+(defmodule reveal-js-yaws
   (export all))
 
 (defun out (arg-data)
