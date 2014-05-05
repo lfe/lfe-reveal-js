@@ -7,9 +7,11 @@
 **An LFE/Exemplar Wrapper for Reveal.js**
 
 You always wanted to build your presetnations in LFE (Lisp Flavored Erlang),
-right? HTML as S-expressions?
+right? With HTML as S-expressions?
 
-Now's your chance!
+We thought so.
+
+Now's your chance.
 
 
 ## Dependencies
@@ -59,7 +61,7 @@ $ make compile
 $ make dev
 ```
 
-Then visit [localhost:5099](http://localhost:5099).
+Then visit [localhost:5099](http://localhost:5099) to check out the demo.
 
 ## Building Your Own
 
