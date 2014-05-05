@@ -7,25 +7,9 @@
   (div '(class "reveal")
     (div '(class "slides")
       (list
-        (build-cover arg-data)
-        (build-chapter-1 arg-data)
+        (slides:cover arg-data)
+        (slides:chapter-1 arg-data)
         ))))
-
-(defun build-cover (arg-data)
-  (section
-    (list
-      (h1 '"Reveal.js")
-      (h3 '"HTML Presentation Made Easy")
-      (p
-        (small '"reveal-js: The Exemplar Presentation Framework")))))
-
-(defun build-chapter-1 (arg-data)
-  (section
-    (list
-      (h1 '"LFE")
-      (h3 '"Lisp Flavored Erlang")
-      (p
-        '"You read that right. This was built with a Lisp."))))
 
 (defun build-index (arg-data)
   (list
