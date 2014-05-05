@@ -33,6 +33,10 @@ They are as follows:
 * [lfeunit](https://github.com/lfe/lfeunit) (needed only to run the unit
   tests)
 * [Exemplar](https://github.com/lfe/exemplar) - HTML as S-Expressions
+
+The following dependencies are bundled with **lfe-reveal-js** and are in
+the project repo:
+
 * [Reveal.js](https://github.com/hakimel/reveal.js)
 
 To download the dependencies and compile them, do this in your cloned dir:
