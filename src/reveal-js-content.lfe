@@ -9,7 +9,8 @@
       (list
         (slides:cover arg-data)
         (slides:chapter-1 arg-data)
-        ))))
+        (slides:chapter-2 arg-data)
+        (slides:chapter-3 arg-data)))))
 
 (defun build-index (arg-data)
   (list
@@ -43,7 +44,10 @@
               href "css/theme/default.css"
               id "theme"))
       (link '(rel "stylesheet"
-              href "lib/css/zenburn.css")))))
+              href "lib/css/zenburn.css"))
+      (link '(rel "icon"
+              type "image/ico"
+              href "icons/favicon.ico")))))
 
 (defun build-javascript (arg-data)
   (list
