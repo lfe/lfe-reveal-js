@@ -6,6 +6,6 @@
 (defun routes
   "2-arity routes for our app."
   ;; /
-  (((list '"") arg-data)
-    (let ((content (reveal-js-content:build-index arg-data)))
+  (((list '"") func arg-data)
+    (let ((content (funcall func arg-data)))
       (reveal-js-util:make-200-result content))))
