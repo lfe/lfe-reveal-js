@@ -17,3 +17,18 @@
 (defmacro slide body
   "This is a convenience macro for creating a new slide."
   `(section (list ,@body)))
+
+(defmacro h1-frag body
+  `(h1 '(class "fragment") (list ,@body)))
+
+(defmacro h2-frag body
+  `(h2 '(class "fragment") (list ,@body)))
+
+(defmacro h3-frag body
+  `(h3 '(class "fragment") (list ,@body)))
+
+(defmacro p-frag body
+  `(p '(class "fragment") (list ,@body)))
+
+(defmacro li-frag body
+  `(li '(class "fragment") (list ,@body)))
