@@ -10,7 +10,7 @@
     (demo:chapter-2 arg-data)
     (demo:chapter-3 arg-data)))
 
-(defun build-index (arg-data)
+(defun build-index (deck-func arg-data)
   (list
     (!doctype 'html)
     (html '(lang "en")
@@ -18,7 +18,7 @@
         (build-head arg-data)
         (body
           (list
-            (build-slide-deck arg-data)
+            (funcall deck-func arg-data)
             (build-javascript arg-data)))))))
 
 (defun build-head (arg-data)

@@ -7,10 +7,12 @@
     (if (== raw-path-info 'undefined)
       (reveal-js-routes:routes
         '("")
-        #'reveal-js-content:build-index/1
+        #'reveal-js-content:build-index/2
+        #'reveal-js-content:build-slide-deck/1
         arg-data)
       (let ((path-info (string:tokens raw-path-info '"/")))
         (reveal-js-routes:routes
           path-info
-          #'reveal-js-content:build-index/1
+          #'reveal-js-content:build-index/2
+          #'reveal-js-content:build-slide-deck/1
           arg-data)))))
