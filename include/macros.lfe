@@ -6,7 +6,7 @@
      (div '(class "slides")
        (list ,@body))))
 
-(defmacro cover body
+(defmacro title-page body
   "This is a convenience macro for the front cover of a deck."
   `(section (list ,@body)))
 
@@ -32,3 +32,6 @@
 
 (defmacro li-frag body
   `(li '(class "fragment") (list ,@body)))
+
+(defmacro notes body
+  `(aside '(class "notes") (list ,@body)))
