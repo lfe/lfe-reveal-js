@@ -30,6 +30,9 @@
 (defmacro p-frag body
   `(p '(class "fragment") (list ,@body)))
 
+(defmacro ul-frag body
+  `(ul '(class "fragment") (list ,@body)))
+
 (defmacro li-frag body
   `(li '(class "fragment") (list ,@body)))
 
