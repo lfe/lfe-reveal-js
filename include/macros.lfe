@@ -18,6 +18,12 @@
   "This is a convenience macro for creating a new slide."
   `(section (list ,@body)))
 
+(defmacro div-frag body
+  `(div '(class "fragment") (list ,@body)))
+
+(defmacro span-frag body
+  `(span '(class "fragment") (list ,@body)))
+
 (defmacro h1-frag body
   `(h1 '(class "fragment") (list ,@body)))
 
@@ -35,6 +41,9 @@
 
 (defmacro li-frag body
   `(li '(class "fragment") (list ,@body)))
+
+(defmacro ol-frag body
+  `(ol '(class "fragment") (list ,@body)))
 
 (defmacro notes body
   `(aside '(class "notes") (list ,@body)))
