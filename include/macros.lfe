@@ -47,3 +47,12 @@
 
 (defmacro notes body
   `(aside '(class "notes") (list ,@body)))
+
+(defmacro lisp-code body
+  `(pre (code '(class "lisp") (list ,@body))))
+
+(defmacro erlang-code body
+  `(pre (code '(class "erlang") (list ,@body))))
+
+(defmacro inline-code body
+  `(code '(class "inline") (strong (list ,@body))))
