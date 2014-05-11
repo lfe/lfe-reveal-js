@@ -56,3 +56,19 @@
 
 (defmacro inline-code body
   `(code '(class "inline") (strong (list ,@body))))
+
+(defmacro quick-ul body
+  `(ul (list ,@(lists:map (lambda (x) `(li ,x)) body))))
+
+(defmacro quick-ol body
+  `(ol (list ,@(lists:map (lambda (x) `(li ,x)) body))))
+
+(defmacro quick-ul-frag body
+  `(ul (list ,@(lists:map
+                 (lambda (x) `(li '(class "fragment") ,x))
+                 body))))
+
+(defmacro quick-ol-frag body
+  `(ol (list ,@(lists:map
+                 (lambda (x) `(li '(class "fragment") ,x))
+                 body))))
