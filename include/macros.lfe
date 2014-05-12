@@ -54,6 +54,12 @@
 (defmacro erlang-code body
   `(pre (code '(class "erlang") (list ,@body))))
 
+(defmacro clojure-code body
+  `(pre (code '(class "clojure") (list ,@body))))
+
+(defmacro shell-code body
+  `(pre (code '(class "shell") (list ,@body))))
+
 (defmacro inline-code body
   `(code '(class "inline") (strong (list ,@body))))
 
