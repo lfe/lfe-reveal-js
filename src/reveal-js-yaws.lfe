@@ -1,7 +1,7 @@
 (defmodule reveal-js-yaws
   (export all))
 
-(include-lib "deps/lfest/include/macros.lfe")
+(include-lib "lfest/include/macros.lfe")
 
 (defroutes
   ;; This is a single-page app, so there is only one valid route.
