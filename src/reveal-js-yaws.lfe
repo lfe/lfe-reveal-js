@@ -13,5 +13,6 @@
   (let ((raw-path-info (reveal-js-util:parse-path arg-data)))
     (if (== raw-path-info 'undefined)
       (get-routes '("") arg-data)
-      (let ((path-info (string:tokens raw-path-info '"/")))
-        (get-routes path-info arg-data)))))
+      (get-routes
+        (string:tokens raw-path-info '"/")
+        arg-data))))
