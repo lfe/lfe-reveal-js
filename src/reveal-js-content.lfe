@@ -21,6 +21,9 @@
             (funcall deck-func arg-data)
             (build-javascript arg-data)))))))
 
+(defun build-index (arg-data)
+  (build-index #'build-slide-deck/1 arg-data))
+
 (defun build-head (arg-data)
   (head
     (list
