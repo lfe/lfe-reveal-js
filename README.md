@@ -92,12 +92,13 @@ In addition to these, **lfe-reveal-js** defines a handful of convenience
 macros:
 
 * ``(deck ...)`` - For creating the slide deck itself.
-* ``(cover ...)`` - For creating a cover page.
+* ``(title-page ...)`` - For creating a cover page.
 * ``(chapter ...)`` - For creating a new chapter in your slide deck.
 * ``(slide ...)`` - For making a new slide in a chapter.
 
 Take a look at the code for the demo slide deck to see example usage of
-these: ``src/demo.lfe``.
+these: ``src/demo.lfe``. For a full list of supported convenience macros,
+be sure to read ``include/macros.lfe``,
 
 
 ### Generating a Staic File
