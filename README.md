@@ -32,7 +32,7 @@ They are as follows:
 * [YAWS](http://yaws.hyber.org/)
 * [lfeunit](https://github.com/lfe/lfeunit) (needed only to run the unit
   tests)
-* [Exemplar](https://github.com/lfe/exemplar) - HTML as S-Expressions
+* [Exemplar](https://github.com/lfex/exemplar) - HTML as S-Expressions
 
 The following dependencies are bundled with **lfe-reveal-js** and are in
 the project repo:
