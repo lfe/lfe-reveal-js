@@ -101,7 +101,7 @@ these: ``src/demo.lfe``. For a full list of supported convenience macros,
 be sure to read ``include/macros.lfe``,
 
 
-### Generating a Staic File
+### Generating a Static File
 
 By default, YAWS serves the slide deck dynamically -- regenerated on page
 load. Here's how you create a static HTML file from the REPL:
